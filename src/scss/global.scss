@@ -1,0 +1,13 @@
+@import "variables";
+
+html, body, #___gatsby, #gatsby-focus-wrapper, main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    // background-color: $color-darkblue;
+}
+
+a, p, h1, h2, h3 {
+    font-family: $font-main;
+    color: $color-mediumblue;
+}

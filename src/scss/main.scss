@@ -1,0 +1,29 @@
+@import "global";
+
+.home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sections {
+    text-align: center;
+    &__row {
+        padding: 12px 0;
+    }
+    &__link {
+        font-size: 64px;
+        text-decoration: none;
+        &-contact {
+            border: none;
+            background: none;
+            color: $color-mediumblue;
+        }
+    }
+    &__link:hover {
+        color: $color-brightpurple;
+        cursor: pointer;
+    }
+}
