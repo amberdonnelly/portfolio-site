@@ -3,5 +3,7 @@ module.exports = {
     siteUrl: "https://www.amberdonnelly.com",
     title: "Amber's Portfolio Site",
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+  ],
 };

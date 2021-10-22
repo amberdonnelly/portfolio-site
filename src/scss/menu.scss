@@ -1,0 +1,25 @@
+@import "global";
+
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    text-align: center;
+    padding: 8px 0;
+    // background-color: $color-darkblue;
+    &__space {
+        width: 25%;
+    }
+    &__item {
+        font-size: 16px;
+        // color: $color-lightblue;
+        &-selected {
+            // text-decoration: underline;
+            color: $color-brightpurple;
+        }
+    }
+    &__item:hover {
+        color: $color-brightpurple;
+    }
+}
