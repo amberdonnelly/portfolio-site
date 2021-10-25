@@ -1,8 +1,14 @@
 @import "global";
 
 .section-page {
-    padding: 60px 50px;
+    padding: 100px 30%;
     height: 100%;
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+    }
 }
 
 .about .portfolio {
