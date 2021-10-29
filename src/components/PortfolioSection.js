@@ -1,11 +1,13 @@
 import * as React from "react"
-import { Container, Col, Button } from "react-bootstrap"
+import { Container, Col } from "react-bootstrap"
 
 // styles
 import '../scss/sections.scss';
 
 // images
 import RobotImg from "../images/robot.png"
+import BiasDetectorImg from "../images/biasdetector.jpg"
+import GithubImg from "../images/github.png"
 
 // data
 import * as projects from '../utils/projects.js'
@@ -13,6 +15,8 @@ import * as projects from '../utils/projects.js'
 // constants
 const image_map  = {
     'robot': RobotImg,
+    'biasdetector': BiasDetectorImg,
+    'github': GithubImg
 }
 
 // components
@@ -32,7 +36,7 @@ function Card(props) {
             </div>
         </div>
         <div className="card__media">
-            <img className="card__media-img" src={image_map[project.image]} />
+            <img className="card__media-img" src={image_map[project.image]} alt={project.image} />
         </div>
       </a>
     )
