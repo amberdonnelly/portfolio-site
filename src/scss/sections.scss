@@ -1,7 +1,7 @@
 @import "global";
 
 .section-page {
-    padding: 100px 20% 200px 20%;
+    padding: 100px 0 200px 0;
     height: 100%;
     .title {
         text-align: center;
@@ -11,14 +11,19 @@
     }
 }
 
+/* styles for the about page */
+
 .about {
     height: 100%;
+    padding: 0 20%;
 }
+
+/* styles for the portfolio page */
 
 .portfolio {
     height: 100%;
+    padding: 0 5%;
     .projects {
-        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -26,12 +31,13 @@
         flex-wrap: wrap;
         &__col {
             width: 40%;
+            max-width: 500px;
             margin: 20px 50px;
         }
     }
     .card {
         height: 300px;
-        width: 400px;
+        width: 100%;
         border: 1px solid $color-mediumblue;
         border-radius: 8px;
         display: grid;
@@ -82,4 +88,37 @@
             }
         }
     }
+}
+
+// for phones
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        .projects {
+            height: auto;
+            &__col {
+                width: 100%;
+            }
+        }
+        .card {
+            height: auto;
+            min-height: 300px;
+            &:hover {
+                border: 1px solid $color-brightpurple;
+                cursor: pointer;
+                .card__body {
+                    display: block;
+                }
+                .card__media {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* styles for the contact page */
+
+.contact {
+    height: 100%;
+    padding: 0 20%;
 }
