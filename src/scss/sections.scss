@@ -3,12 +3,31 @@
 .section-page {
     padding: 100px 0 200px 0;
     height: 100%;
-    .title {
-        text-align: center;
+}
+
+.skills {
+    margin-left: 20px;
+    &__title {
+        margin: 4px 0;
+        font-weight: 600;
     }
-    .subtitle {
-        text-align: center;
+    &__badge {
+        display: inline-flex;
+        height: 15px;
+        border-radius: 14px;
+        margin: 2px;
+        padding: 4px 8px;
+        background-color: $color-darkblue;
+        color: white;
+        font-size: 12px;
     }
+}
+
+.tooltiptext {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
 }
 
 /* styles for the about page */
@@ -16,6 +35,41 @@
 .about {
     height: 100%;
     padding: 0 20%;
+    &__header {
+        display: flex;
+        &-title {
+            margin-left: 12px;
+            display: block;
+            font-size: 24px;
+        }
+        &-resume {
+            position: relative;
+            &:hover .tooltiptext {
+                display: block;
+            }
+        }
+    }
+    &__section {
+        margin: 12px 0;
+        &-title {
+            margin: 12px 0 4px 0;
+            font-weight: 600;
+        }
+        &-body {
+            margin-left: 12px;
+        }
+    }
+    .resume {
+        width: 50px;
+        height: auto;
+        // filter calculator: https://codepen.io/sosuke/pen/Pjoqqp
+        // light purple (link color)
+        filter: invert(38%) sepia(73%) saturate(635%) hue-rotate(221deg) brightness(90%) contrast(81%);
+        &:hover {
+            // bright purple (hovered link color)
+            filter: invert(11%) sepia(96%) saturate(4752%) hue-rotate(266deg) brightness(90%) contrast(149%);
+        }
+    }
 }
 
 /* styles for the portfolio page */
@@ -83,7 +137,7 @@
             border-radius: 8px;
             &-img {
                 flex-shrink: 0;
-                height: 100%;
+                height: 110%;
                 width: auto;
             }
         }
