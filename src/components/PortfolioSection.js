@@ -8,6 +8,7 @@ import '../scss/sections.scss';
 import RobotImg from "../images/robot.png"
 import BiasDetectorImg from "../images/biasdetector.jpg"
 import GithubImg from "../images/github.png"
+import ASVImg from "../images/asv.jpg"
 
 // data
 import * as projects from '../utils/projects.js'
@@ -16,7 +17,8 @@ import * as projects from '../utils/projects.js'
 const image_map  = {
     'robot': RobotImg,
     'biasdetector': BiasDetectorImg,
-    'github': GithubImg
+    'github': GithubImg,
+    'asv': ASVImg,
 }
 
 // components
@@ -27,10 +29,10 @@ function Card(props) {
         <div className="card__body">
             <p className="card__title">{project.title}</p>
             <p className="card__description">{project.description}</p>
-            <div className="card__skills">
+            <div>
                 {project.skills.map( (skill) => {
                     return(
-                        <div className="card__skills-badge">{skill}</div>
+                        <p className="skills__badge">{skill}</p>
                     )
                 })}
             </div>
