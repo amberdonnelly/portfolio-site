@@ -9,6 +9,7 @@ import RobotImg from "../images/robot.png"
 import BiasDetectorImg from "../images/biasdetector.jpg"
 import GithubImg from "../images/github.png"
 import ASVImg from "../images/asv.jpg"
+import FinanceImg from "../images/finance.png"
 
 // data
 import * as projects from '../utils/projects.js'
@@ -19,6 +20,7 @@ const image_map  = {
     'biasdetector': BiasDetectorImg,
     'github': GithubImg,
     'asv': ASVImg,
+    'finance': FinanceImg,
 }
 
 // components

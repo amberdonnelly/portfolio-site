@@ -10,7 +10,8 @@ export const SKILLS = [
             'bash',
             'java',
             'c++',
-            'c'
+            'c',
+            'matlab',
         ]
     },
     {
@@ -31,8 +32,28 @@ export const SKILLS = [
             'linear algebra',
             'partial differential equations',
             'complex analysis',
-            'probability \& statistics',
+            'probability & statistics',
             'proofs',
         ]
     },
+    {
+        'section': 'electrical',
+        'list': [
+            'soldering',
+            'multisim',
+            'fpga programming',
+            'vhdl',
+            'circuit analysis',
+        ]
+    },
+    {
+        'section': 'mechanical',
+        'list': [
+            'solidworks',
+            'onshape',
+            'machine shop',
+            'laser cutter',
+            'waterjet cutter',
+        ]
+    }
 ]

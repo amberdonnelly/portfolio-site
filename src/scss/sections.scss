@@ -1,8 +1,8 @@
 @import "global";
 
 .section-page {
-    padding: 100px 0 200px 0;
-    height: 100%;
+    padding: 100px 0 100px 0;
+    height: auto;
 }
 
 .skills {
@@ -50,13 +50,28 @@
         }
     }
     &__section {
-        margin: 12px 0;
+        margin: 18px 0;
         &-title {
             margin: 12px 0 4px 0;
             font-weight: 600;
         }
         &-body {
-            margin-left: 12px;
+            margin: 4px 0 0 12px;
+        }
+    }
+    &__row {
+        width: 100%;
+        padding: 8px 0;
+        display: flex;
+        margin-left: 12px;
+        &-leftcol {
+            width: 20%;
+        }
+        &-midcol {
+            width: 30%;
+        }
+        &-rightcol {
+            width: 50%;
         }
     }
     .resume {
