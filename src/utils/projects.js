@@ -12,6 +12,18 @@ export const PROJECTS = [
         'link': 'https://github.com/amberdonnelly/ambersite'
     },
     {
+        'title': 'stock market analysis with python',
+        'description': 'python stock analysis guided by Derek Banas\'s youtube tutorials on Python for Finance.',
+        'skills': [
+            'python',
+            'matplotlib',
+            'numpy',
+            'pandas',
+        ],
+        'image': 'finance',
+        'link': 'https://github.com/amberdonnelly/python-for-finance'
+    },
+    {
         'title': 'collision avoidance for autonomous surface vehicle',
         'description': 'a computer vision algorithm that identifies obstacles (such as boats/floating objects/shorelines) to aid an autonomous water vehicle with collision avoidance.',
         'skills': [
