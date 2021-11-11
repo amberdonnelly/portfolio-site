@@ -1,4 +1,4 @@
-## ambersite
+## portfoliosite
 
 This site is built with Gatsby. It's hosted for free on their server's at https://ambersite.gatsbyjs.io/ and redirected to https://amberdonnelly.com.
 
