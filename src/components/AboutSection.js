@@ -16,7 +16,7 @@ const AboutSection = () => {
         <div className="about__header">
           <a className="about__header-resume" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1NPeqeRVCZzkGRIBDgHopk90GtRFWWYkL/view?usp=sharing">
             <span className="tooltiptext">resume</span>
-            <img className="resume" src={DocIcon} />
+            <img className="resume" src={DocIcon} alt="resume icon" />
           </a>
           <div className="about__header-title">
             <p><strong>amber donnelly</strong> (they/them)</p>
@@ -70,7 +70,7 @@ const AboutSection = () => {
             )
           })}
         </div>
-        <div className="about__section">
+        {/* <div className="about__section">
           <p className="about__section-title">volunteer experience</p>
           <Row className="about__row">
             <Col className="about__row-leftcol">[2015:2020]</Col>
@@ -82,7 +82,7 @@ const AboutSection = () => {
             <Col className="about__row-midcol">vincent massey highschool</Col>
             <Col className="about__row-rightcol">highschool diploma &amp; 5 ap credits</Col>
           </Row>
-        </div>
+        </div> */}
         <div className="about__section">
           <p className="about__section-title">interests</p>
           <p className="about__section-body">film analysis, sci-fi novels, videogames, languages (czech &amp; spanish &amp; french), travel, diversity equity &amp; inclusion, aviation</p>

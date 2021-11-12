@@ -10,7 +10,7 @@ const ContactSection = () => {
 
             <p>this is going to be an email form!</p>
             <br />
-            <p>but in the meantime, here's my <a target="_blank" href="https://www.linkedin.com/in/amberdonnelly/">linkedin</a></p>
+            <p>but in the meantime, here's my <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/amberdonnelly/">linkedin</a></p>
         </Container>
     )
 }
